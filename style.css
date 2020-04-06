@@ -1,83 +1,195 @@
-/* ------ For navbar ------*/
-
-/* Add a black background color to the top navigation */
-.navbar {
-  background-color: #333;
-  overflow: hidden;
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right bottom, #0F2027, #203A43, #2C5364);
+    background-attachment: fixed;
 }
 
-.navbar a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.shadowed {
+    box-shadow: 1em 1em 2em #1b1a2073;
 }
 
-.navbar a:hover:not(.logo-button) {
-  background-color: #ddd;
-  color: black;
+.bolder {
+    font-weight: 800;
 }
 
-.navbar a.active {
-  background-color: #4CAF50;
-  color: white;
+.boldish {
+    font-weight: 600;
 }
 
-.logo-button {
-  /* width:1%;
-  height: 1%;
-  border-radius: 50%; */
-/*  height: auto;
-    width: auto;
-    max-height: 30px;
-    max-width: 250px;
-    background-size: cover !important;*/
+.navigation, .dropdown-item {
+    letter-spacing: .1em;
+    font-size: 0.8em;
 }
 
-/* ------ For image ------*/
-
-.obj-detection-img {
-  height: 100%;
-  width: 100%;
+.img-fluid {
+    width: 80%;
+    transition: filter 700ms;
 }
 
-/* ------ For latest work ------*/
+.img-fluid:hover {
+    filter: opacity(0.75);
+}
 
-/*.latest-work {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.bio h1 {
+    font-size: 3em;
+    transition: color 700ms;
+}
 
-  line-height: 5px;
-  border: 3px dashed;
-}*/
+.bio h1:hover {
+    color: #656A70;
+}
 
-h1 {
-    overflow: hidden;
-    text-align: center;
+.job {
     font-size: 1.5em;
-    font-family: "Courier New";
 }
 
-h1:before,
-h1:after {
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    content: "";
-    display: inline-block;
-    height: .1em;
+.minibio {
+    line-height: 2;
+    text-transform: none;
+}
+
+.minibio a {
+    color: #343a40;
+}
+
+.socials a {
+    color: #343a40;
+    letter-spacing: 1em;
+    font-size: 1.5em;
+}
+
+.socials a:hover {
+    color: #656A70;
+}
+
+.socials-white {
+    color: #343a40;
+    letter-spacing: 1em;
+    font-size: 1.5em;
+}
+
+.socials-white a {
+    color: white;
+}
+
+.menubar {
+    background-color: #d4dee9;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.window {
+    border-radius: 0 0 10px 10px;
+}
+
+.red {
+    color: #FF6057;
+}
+
+.amber {
+    color: #FFBD2E;
+}
+
+.green {
+    color: #27C93F;
+}
+
+
+.pink {
+    color: #ff77b7;
+}
+
+.desktop {
+    height: 125vh;
+}
+
+.folders {
+    text-align: center;
+}
+
+
+
+.foldertab {
+    width: 4em;
+    height: 2.5em;
+    margin-top: 1.5em;
     position: relative;
-    vertical-align: middle;
+    background-color: #bddeff;
+    box-shadow: .5em .5em .5em rgba(0,0,0,0.2);
+    left: 0.9em;
+}
+
+.foldertab:before {
+    content: '';
     width: 50%;
-    margin-bottom: .15em;
+    height: 1em;
+    border-radius: 0.2em 0.2em 0 0;
+    background-color: #bddeff;
+    position: absolute;
+    top: -0.5em;
+    vertical-align: middle;
 }
-h1:before {
-    right: 0.5em;
-    margin-left: -50%;
+
+.foldertab:after {
+    content: '';
+    width: 105%;
+    height: 2.5em;
+    border-radius: .2em;
+    background-color: #90c6fc;
+    position: absolute;
+    bottom: -0.25em;
+    left: -0.1em;
 }
-h1:after {
-    left: 0.5em;
-    margin-right: -50%;
+
+.foldername {
+    text-shadow: .25em .25em .25em rgba(0,0,0,0.5);
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
 }
+
+button {
+    background: transparent;
+    border: none;
+}
+
+hr {
+    width:80%;
+}
+
+#portfolio {
+    height: 100%;
+}
+
+.emoji {
+    font-size: 5em;
+}
+
+#totop {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 3em;
+    text-align: center;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+}
+
+
+.scrolled {
+    background: rgba(27, 25, 32, 0.8);
+    border-radius: 0 0px 20px 20px;
+}
+
+@media (max-width: 575.98px) { 
+    #totop {
+        bottom: 0.5em;
+        right: 0.5em;
+    }
+}
+
+.footer {
+    color: white;
+}
+
